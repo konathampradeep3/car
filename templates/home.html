@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
+</head>
+<body>
+
+    <nav>
+        <div>
+           <h1>SPORTS</h1>
+        </div>
+        <div class="tag">
+            <a href="{% url 'car' %}">Car</a>
+            <a href="{% url 'bike' %}">Bike</a>
+            <a href="#contactme">contact</a>
+
+        </div>
+    </nav>
+    {% block body_block %}
+        <div class="style">
+        <img src="{% static 'images/car1.jpg' %}" alt="">
+        <img src="{% static 'images/bike3.webp' %}" alt="">
+        </div>
+    {% endblock%}
+
+
+    <div class="contact" id="contactme">
+      <h1>Contact me for more details</h1>
+      <h1>6309605292</h1>
+
+    </div>
+
+
+
+    
+</body>
+</html>
