@@ -15,6 +15,9 @@ class Car(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='cars/')
 
+    def __str__(self):
+        return self.name
+
 
 class UseCase(models.Model):
     name = models.CharField(max_length=50)

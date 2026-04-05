@@ -24,4 +24,6 @@ urlpatterns = [
     path('home/',home,name='home'),
     path('car/',car,name='car'),
     path('bike/',bike,name='bike'),
+    path('insert_car/',insert_car,name='insert_car'),
+    path('display_car/',display_car,name='display_car'),
 ]
