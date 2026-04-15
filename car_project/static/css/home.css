@@ -2,7 +2,7 @@
     margin: 0px;
 }
 nav{
-    border: 2px solid black;
+    border: 2px solid rgb(234, 215, 215);
     height: 100px;
     display: flex;
     flex-direction: row;
