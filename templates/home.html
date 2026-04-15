@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
+    {% block title %}
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
+    {% endblock %}
 </head>
+{% block body_block %}
 <body>
-
     <nav>
         <div>
            <h1>SPORTS</h1>
@@ -20,22 +22,21 @@
 
         </div>
     </nav>
-    {% block body_block %}
         <div class="style">
         <img src="{% static 'images/car1.jpg' %}" alt="">
         <img src="{% static 'images/bike3.webp' %}" alt="">
         </div>
+        
+        
+        <div class="contact" id="contactme">
+            <h1>Contact me for more details</h1>
+            <h1>6309605292</h1>
+            
+        </div>
+        
+        
+        
+        
+    </body>
     {% endblock%}
-
-
-    <div class="contact" id="contactme">
-      <h1>Contact me for more details</h1>
-      <h1>6309605292</h1>
-
-    </div>
-
-
-
-    
-</body>
 </html>
